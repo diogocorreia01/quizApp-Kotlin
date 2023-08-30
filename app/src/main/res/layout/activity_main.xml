@@ -5,80 +5,82 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_bg"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/quiz_app"
-        android:textSize="25sp"
-        android:layout_marginBottom="30dp"
-        android:textStyle="bold"
+        android:layout_marginBottom="24dp"
         android:gravity="center"
-        android:textColor="@color/white"/>
-    
+        android:text="Fun with Flags!"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        app:cardCornerRadius="8dp"
-        android:background="@color/white">
-        
+        android:layout_marginHorizontal="20dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_margin="16dp"
             android:orientation="vertical">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/welcome"
-                android:textSize="30sp"
-                android:textStyle="bold"
                 android:gravity="center"
-                android:textColor="#363A43"/>
+                android:text="Welcome"
+                android:textColor="#363A43"
+                android:textSize="36sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/enter_your_name"
-                android:textSize="16sp"
-                android:layout_marginTop="16dp"
-                android:textStyle="bold"
+                android:layout_marginTop="12dp"
                 android:gravity="center"
-                android:textColor="#7A8089"/>
+                android:text="Please enter your name"
+                android:textColor="#7A8089"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-                android:layout_marginTop="20dp">
-                
+                android:layout_marginTop="20dp"
+                app:boxStrokeColor="#7A8089">
+
                 <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/etName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/e_g_diogo"
+                    android:background="@color/white"
+                    android:hint="Enter name:"
                     android:inputType="textCapWords"
-                    android:textColor="#363A43"
-                    android:textColorHint="#7A8089" />
-
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <Button
+                android:id="@+id/btnStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:background="@color/design_default_color_primary"
-                android:text="@string/start"
+                android:text="START"
                 android:textColor="@color/white"
-                android:textSize="18sp"/>
-
+                android:textSize="18dp"
+                android:textStyle="bold" />
         </LinearLayout>
-
     </com.google.android.material.card.MaterialCardView>
 
 </LinearLayout>
