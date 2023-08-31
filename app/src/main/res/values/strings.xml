@@ -6,4 +6,8 @@
     <string name="start">Start</string>
     <string name="e_g_diogo">e.g. Diogo</string>
     <string name="submit">SUBMIT</string>
+    <string name="result">Result</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="finish">FINISH</string>
+    <string name="result_image">Result Image</string>
 </resources>
