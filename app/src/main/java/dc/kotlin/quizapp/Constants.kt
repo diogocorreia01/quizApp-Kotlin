@@ -2,6 +2,10 @@ package dc.kotlin.quizapp
 
 object Constants {
 
+    const val USER_NAME: String = "userName"
+    const val TOTAL_QUESTIONS = "totalQuestions"
+    const val CORRECT_ANSWERS = "correctAnswers"
+
     fun getQuestions():ArrayList<Question> {
         val questionsList = ArrayList<Question>()
 
